@@ -9,7 +9,9 @@ import java.awt.event.ActionEvent;
 
 public class WackAMole extends JFrame {
 	static int mole = (int)(Math.random() * 32 + 1);
+	static int wackNum = 0;
 	
+	private JLabel lblWackNum;
 	private JButton btnBruh1;
 	private JButton btnBruh2;
 	private JButton btnBruh3;
@@ -147,6 +149,8 @@ public class WackAMole extends JFrame {
 		else if (mole == 32) {
 			btnBruh32.setVisible(true);
 		}
+		wackNum++;
+		lblWackNum.setText(String.valueOf(wackNum));
 	}
 	public WackAMole() {
 		setTitle("Wack-a-Bruh");
@@ -159,10 +163,11 @@ public class WackAMole extends JFrame {
 		lblTitle.setBounds(10, 11, 268, 23);
 		getContentPane().add(lblTitle);
 		
-		JButton btnBruh1 = new JButton("bruh");
+		btnBruh1 = new JButton("bruh");
 		btnBruh1.setVisible(true);
 		btnBruh1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh1.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -170,10 +175,11 @@ public class WackAMole extends JFrame {
 		btnBruh1.setBounds(10, 175, 89, 23);
 		getContentPane().add(btnBruh1);
 		
-		JButton btnBruh2 = new JButton("bruh");
+		btnBruh2 = new JButton("bruh");
 		btnBruh2.setVisible(false);
 		btnBruh2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh2.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -181,10 +187,11 @@ public class WackAMole extends JFrame {
 		btnBruh2.setBounds(10, 201, 89, 23);
 		getContentPane().add(btnBruh2);
 		
-		JButton btnBruh3 = new JButton("bruh");
+		btnBruh3 = new JButton("bruh");
 		btnBruh3.setVisible(false);
 		btnBruh3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh3.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -192,10 +199,11 @@ public class WackAMole extends JFrame {
 		btnBruh3.setBounds(118, 175, 89, 23);
 		getContentPane().add(btnBruh3);
 		
-		JButton btnBruh4 = new JButton("bruh");
+		btnBruh4 = new JButton("bruh");
 		btnBruh4.setVisible(false);
 		btnBruh4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh4.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -203,10 +211,11 @@ public class WackAMole extends JFrame {
 		btnBruh4.setBounds(118, 201, 89, 23);
 		getContentPane().add(btnBruh4);
 		
-		JButton btnBruh5 = new JButton("bruh");
+		btnBruh5 = new JButton("bruh");
 		btnBruh5.setVisible(false);
 		btnBruh5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh5.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -214,10 +223,11 @@ public class WackAMole extends JFrame {
 		btnBruh5.setBounds(226, 201, 89, 23);
 		getContentPane().add(btnBruh5);
 		
-		JButton btnBruh6 = new JButton("bruh");
+		btnBruh6 = new JButton("bruh");
 		btnBruh6.setVisible(false);
 		btnBruh6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh6.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -225,10 +235,11 @@ public class WackAMole extends JFrame {
 		btnBruh6.setBounds(226, 175, 89, 23);
 		getContentPane().add(btnBruh6);
 		
-		JButton btnBruh7 = new JButton("bruh");
+		btnBruh7 = new JButton("bruh");
 		btnBruh7.setVisible(false);
 		btnBruh7.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh7.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -236,10 +247,11 @@ public class WackAMole extends JFrame {
 		btnBruh7.setBounds(335, 175, 89, 23);
 		getContentPane().add(btnBruh7);
 		
-		JButton btnBruh8 = new JButton("bruh");
+		btnBruh8 = new JButton("bruh");
 		btnBruh8.setVisible(false);
 		btnBruh8.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh8.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -247,10 +259,11 @@ public class WackAMole extends JFrame {
 		btnBruh8.setBounds(335, 201, 89, 23);
 		getContentPane().add(btnBruh8);
 		
-		JButton btnBruh9 = new JButton("bruh");
+		btnBruh9 = new JButton("bruh");
 		btnBruh9.setVisible(false);
 		btnBruh9.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh9.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -258,10 +271,11 @@ public class WackAMole extends JFrame {
 		btnBruh9.setBounds(10, 227, 89, 23);
 		getContentPane().add(btnBruh9);
 		
-		JButton btnBruh10 = new JButton("bruh");
+		btnBruh10 = new JButton("bruh");
 		btnBruh10.setVisible(false);
 		btnBruh10.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh10.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -269,10 +283,11 @@ public class WackAMole extends JFrame {
 		btnBruh10.setBounds(118, 227, 89, 23);
 		getContentPane().add(btnBruh10);
 		
-		JButton btnBruh11 = new JButton("bruh");
+		btnBruh11 = new JButton("bruh");
 		btnBruh11.setVisible(false);
 		btnBruh11.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh11.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -280,10 +295,11 @@ public class WackAMole extends JFrame {
 		btnBruh11.setBounds(226, 227, 89, 23);
 		getContentPane().add(btnBruh11);
 		
-		JButton btnBruh12 = new JButton("bruh");
+		btnBruh12 = new JButton("bruh");
 		btnBruh12.setVisible(false);
 		btnBruh12.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh12.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -291,10 +307,11 @@ public class WackAMole extends JFrame {
 		btnBruh12.setBounds(335, 227, 89, 23);
 		getContentPane().add(btnBruh12);
 		
-		JButton btnBruh13 = new JButton("bruh");
+		btnBruh13 = new JButton("bruh");
 		btnBruh13.setVisible(false);
 		btnBruh13.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh13.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -302,10 +319,11 @@ public class WackAMole extends JFrame {
 		btnBruh13.setBounds(10, 98, 89, 23);
 		getContentPane().add(btnBruh13);
 		
-		JButton btnBruh14 = new JButton("bruh");
+		btnBruh14 = new JButton("bruh");
 		btnBruh14.setVisible(false);
 		btnBruh14.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh14.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -313,10 +331,11 @@ public class WackAMole extends JFrame {
 		btnBruh14.setBounds(118, 98, 89, 23);
 		getContentPane().add(btnBruh14);
 		
-		JButton btnBruh15 = new JButton("bruh");
+		btnBruh15 = new JButton("bruh");
 		btnBruh15.setVisible(false);
 		btnBruh15.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh15.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -324,10 +343,11 @@ public class WackAMole extends JFrame {
 		btnBruh15.setBounds(10, 124, 89, 23);
 		getContentPane().add(btnBruh15);
 		
-		JButton btnBruh16 = new JButton("bruh");
+		btnBruh16 = new JButton("bruh");
 		btnBruh16.setVisible(false);
 		btnBruh16.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh16.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -335,10 +355,11 @@ public class WackAMole extends JFrame {
 		btnBruh16.setBounds(118, 124, 89, 23);
 		getContentPane().add(btnBruh16);
 		
-		JButton btnBruh17 = new JButton("bruh");
+		btnBruh17 = new JButton("bruh");
 		btnBruh17.setVisible(false);
 		btnBruh17.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh17.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -346,10 +367,11 @@ public class WackAMole extends JFrame {
 		btnBruh17.setBounds(10, 150, 89, 23);
 		getContentPane().add(btnBruh17);
 		
-		JButton btnBruh18 = new JButton("bruh");
+		btnBruh18 = new JButton("bruh");
 		btnBruh18.setVisible(false);
 		btnBruh18.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh18.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -357,10 +379,11 @@ public class WackAMole extends JFrame {
 		btnBruh18.setBounds(118, 150, 89, 23);
 		getContentPane().add(btnBruh18);
 		
-		JButton btnBruh19 = new JButton("bruh");
+		btnBruh19 = new JButton("bruh");
 		btnBruh19.setVisible(false);
 		btnBruh19.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh19.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -368,10 +391,11 @@ public class WackAMole extends JFrame {
 		btnBruh19.setBounds(226, 150, 89, 23);
 		getContentPane().add(btnBruh19);
 		
-		JButton btnBruh20 = new JButton("bruh");
+		btnBruh20 = new JButton("bruh");
 		btnBruh20.setVisible(false);
 		btnBruh20.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh20.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -379,10 +403,11 @@ public class WackAMole extends JFrame {
 		btnBruh20.setBounds(226, 124, 89, 23);
 		getContentPane().add(btnBruh20);
 		
-		JButton btnBruh21 = new JButton("bruh");
+		btnBruh21 = new JButton("bruh");
 		btnBruh21.setVisible(false);
 		btnBruh21.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh21.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -390,10 +415,11 @@ public class WackAMole extends JFrame {
 		btnBruh21.setBounds(226, 98, 89, 23);
 		getContentPane().add(btnBruh21);
 		
-		JButton btnBruh22 = new JButton("bruh");
+		btnBruh22 = new JButton("bruh");
 		btnBruh22.setVisible(false);
 		btnBruh22.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh22.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -401,10 +427,11 @@ public class WackAMole extends JFrame {
 		btnBruh22.setBounds(335, 98, 89, 23);
 		getContentPane().add(btnBruh22);
 		
-		JButton btnBruh23 = new JButton("bruh");
+		btnBruh23 = new JButton("bruh");
 		btnBruh23.setVisible(false);
 		btnBruh23.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh23.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -412,10 +439,11 @@ public class WackAMole extends JFrame {
 		btnBruh23.setBounds(335, 124, 89, 23);
 		getContentPane().add(btnBruh23);
 		
-		JButton btnBruh24 = new JButton("bruh");
+		btnBruh24 = new JButton("bruh");
 		btnBruh24.setVisible(false);
 		btnBruh24.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh24.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -423,10 +451,11 @@ public class WackAMole extends JFrame {
 		btnBruh24.setBounds(335, 150, 89, 23);
 		getContentPane().add(btnBruh24);
 		
-		JButton btnBruh25 = new JButton("bruh");
+		btnBruh25 = new JButton("bruh");
 		btnBruh25.setVisible(false);
 		btnBruh25.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh25.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -434,10 +463,11 @@ public class WackAMole extends JFrame {
 		btnBruh25.setBounds(10, 72, 89, 23);
 		getContentPane().add(btnBruh25);
 		
-		JButton btnBruh26 = new JButton("bruh");
+		btnBruh26 = new JButton("bruh");
 		btnBruh26.setVisible(false);
 		btnBruh26.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh26.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -445,10 +475,11 @@ public class WackAMole extends JFrame {
 		btnBruh26.setBounds(118, 72, 89, 23);
 		getContentPane().add(btnBruh26);
 		
-		JButton btnBruh27 = new JButton("bruh");
+		btnBruh27 = new JButton("bruh");
 		btnBruh27.setVisible(false);
 		btnBruh27.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh27.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -456,10 +487,11 @@ public class WackAMole extends JFrame {
 		btnBruh27.setBounds(226, 72, 89, 23);
 		getContentPane().add(btnBruh27);
 		
-		JButton btnBruh28 = new JButton("bruh");
+		btnBruh28 = new JButton("bruh");
 		btnBruh28.setVisible(false);
 		btnBruh28.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh28.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -467,10 +499,11 @@ public class WackAMole extends JFrame {
 		btnBruh28.setBounds(335, 72, 89, 23);
 		getContentPane().add(btnBruh28);
 		
-		JButton btnBruh29 = new JButton("bruh");
+		btnBruh29 = new JButton("bruh");
 		btnBruh29.setVisible(false);
 		btnBruh29.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh29.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -478,10 +511,11 @@ public class WackAMole extends JFrame {
 		btnBruh29.setBounds(10, 45, 89, 23);
 		getContentPane().add(btnBruh29);
 		
-		JButton btnBruh30 = new JButton("bruh");
+		btnBruh30 = new JButton("bruh");
 		btnBruh30.setVisible(false);
 		btnBruh30.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh30.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -489,10 +523,11 @@ public class WackAMole extends JFrame {
 		btnBruh30.setBounds(118, 45, 89, 23);
 		getContentPane().add(btnBruh30);
 		
-		JButton btnBruh31 = new JButton("bruh");
+		btnBruh31 = new JButton("bruh");
 		btnBruh31.setVisible(false);
 		btnBruh31.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh31.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -500,10 +535,11 @@ public class WackAMole extends JFrame {
 		btnBruh31.setBounds(226, 45, 89, 23);
 		getContentPane().add(btnBruh31);
 		
-		JButton btnBruh32 = new JButton("bruh");
+		btnBruh32 = new JButton("bruh");
 		btnBruh32.setVisible(false);
 		btnBruh32.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				btnBruh32.setVisible(false);
 				MoleWack();
 			}
 		});
@@ -516,7 +552,7 @@ public class WackAMole extends JFrame {
 		lblWacks.setBounds(334, 20, 48, 14);
 		getContentPane().add(lblWacks);
 		
-		JLabel lblWackNum = new JLabel("0");
+		lblWackNum = new JLabel("0");
 		lblWackNum.setFont(new Font("Ubuntu", Font.PLAIN, 15));
 		lblWackNum.setBounds(385, 20, 39, 14);
 		getContentPane().add(lblWackNum);
@@ -526,6 +562,5 @@ public class WackAMole extends JFrame {
 		WackAMole wackABruh = new WackAMole();
 		wackABruh.setSize(new Dimension(450,300));
 		wackABruh.setVisible(true);
-		System.out.println(mole);
 	}
 }
