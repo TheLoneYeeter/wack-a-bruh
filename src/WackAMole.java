@@ -9,8 +9,10 @@ import java.awt.event.ActionEvent;
 
 public class WackAMole extends JFrame {
 	static int mole = (int)(Math.random() * 32 + 1);
+	static int mole2 = (int)(Math.random() * 2 + 1)
 	static int wackNum = 0;
-	
+	static int doubleMole = 0;
+  
 	private JLabel lblWackNum;
 	private JButton btnBruh1;
 	private JButton btnBruh2;
@@ -149,9 +151,19 @@ public class WackAMole extends JFrame {
 		else if (mole == 32) {
 			btnBruh32.setVisible(true);
 		}
+		doubleMole = (int)(Math.random() * 2 + 1)
+		
+		if doubleMole = 2 {
+		  mole2 = (int)(Math.random() * 32 + 1)
+		  if (mole2 == 1) {
+		    btnBruh1.setVisible(true)
+		  }
+		}
+		
 		wackNum++;
 		lblWackNum.setText(String.valueOf(wackNum));
 	}
+	
 	public WackAMole() {
 		setTitle("Wack-a-Bruh");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -277,6 +289,7 @@ public class WackAMole extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				btnBruh10.setVisible(false);
 				MoleWack();
+				
 			}
 		});
 		btnBruh10.setFont(new Font("Ubuntu", Font.PLAIN, 14));
@@ -562,5 +575,6 @@ public class WackAMole extends JFrame {
 		WackAMole wackABruh = new WackAMole();
 		wackABruh.setSize(new Dimension(450,300));
 		wackABruh.setVisible(true);
+		System.out.println(doubleMole);
 	}
 }
