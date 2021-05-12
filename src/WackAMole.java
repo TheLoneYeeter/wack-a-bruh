@@ -8,8 +8,10 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
 public class WackAMole extends JFrame {
-	static int mole = (int)(Math.random() * 32 + 1);
+	static int mole = 0;
+	static int mole2 = 0;
 	static int wackNum = 0;
+	static int doubleMole = 0;
 	
 	private JLabel lblWackNum;
 	private JButton btnBruh1;
@@ -47,6 +49,8 @@ public class WackAMole extends JFrame {
 
 	public void MoleWack() {
 		mole = (int)(Math.random() * 32 + 1);
+		mole2 = (int)(Math.random() * 32 + 1);
+		
 		if (mole == 1) {
 			btnBruh1.setVisible(true);
 		}
@@ -149,6 +153,113 @@ public class WackAMole extends JFrame {
 		else if (mole == 32) {
 			btnBruh32.setVisible(true);
 		}
+
+		doubleMole = (int)(Math.random() * 2 + 1);
+		if (doubleMole == 2) {
+			if (mole2 == 1) {
+				btnBruh1.setVisible(true);
+			}
+			else if (mole2 == 2) {
+				btnBruh2.setVisible(true);
+			}
+			else if (mole2 == 3) {
+				btnBruh3.setVisible(true);
+			}
+			else if (mole2 == 4) {
+				btnBruh4.setVisible(true);
+			}
+			else if (mole2 == 5) {
+				btnBruh5.setVisible(true);
+			}
+			else if (mole2 == 6) {
+				btnBruh6.setVisible(true);
+			}
+			else if (mole2 == 7) {
+				btnBruh7.setVisible(true);
+			}
+			else if (mole2 == 8) {
+				btnBruh8.setVisible(true);
+			}
+			else if (mole2 == 9) {
+				btnBruh9.setVisible(true);
+			}
+			else if (mole2 == 10) {
+				btnBruh10.setVisible(true);
+			}
+			else if (mole2 == 11) {
+				btnBruh11.setVisible(true);
+			}
+			else if (mole2 == 12) {
+				btnBruh12.setVisible(true);
+			}
+			else if (mole2 == 13) {
+				btnBruh13.setVisible(true);
+			}
+			else if (mole2 == 14) {
+				btnBruh14.setVisible(true);
+			}
+			else if (mole2 == 14) {
+				btnBruh14.setVisible(true);
+			}
+			else if (mole2 == 15) {
+				btnBruh15.setVisible(true);
+			}
+			else if (mole2 == 16) {
+				btnBruh16.setVisible(true);
+			}
+			else if (mole2 == 17) {
+				btnBruh17.setVisible(true);
+			}
+			else if (mole2 == 18) {
+				btnBruh18.setVisible(true);
+			}
+			else if (mole2 == 19) {
+				btnBruh19.setVisible(true);
+			}
+			else if (mole2 == 20) {
+				btnBruh20.setVisible(true);
+			}
+			else if (mole2 == 21) {
+				btnBruh21.setVisible(true);
+			}
+			else if (mole2 == 22) {
+				btnBruh22.setVisible(true);
+			}
+			else if (mole2 == 23) {
+				btnBruh23.setVisible(true);
+			}
+			else if (mole2 == 24) {
+				btnBruh24.setVisible(true);
+			}
+			else if (mole2 == 25) {
+				btnBruh25.setVisible(true);
+			}
+			else if (mole2 == 26) {
+				btnBruh26.setVisible(true);
+			}
+			else if (mole2 == 26) {
+				btnBruh26.setVisible(true);
+			}
+			else if (mole2 == 27) {
+				btnBruh27.setVisible(true);
+			}
+			else if (mole == 28) {
+				btnBruh28.setVisible(true);
+			}
+			else if (mole2 == 29) {
+				btnBruh29.setVisible(true);
+			}
+			else if (mole2 == 30) {
+				btnBruh30.setVisible(true);
+			}
+			else if (mole2 == 31) {
+				btnBruh31.setVisible(true);
+			}
+			else if (mole2 == 32) {
+				btnBruh32.setVisible(true);
+			}
+		}
+
 		wackNum++;
 		lblWackNum.setText(String.valueOf(wackNum));
 	}
@@ -169,6 +280,7 @@ public class WackAMole extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				btnBruh1.setVisible(false);
 				MoleWack();
+				btnBruh1.setVisible(false);
 			}
 		});
 		btnBruh1.setFont(new Font("Ubuntu", Font.PLAIN, 14));
@@ -181,6 +293,7 @@ public class WackAMole extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				btnBruh2.setVisible(false);
 				MoleWack();
+				btnBruh2.setVisible(false);
 			}
 		});
 		btnBruh2.setFont(new Font("Ubuntu", Font.PLAIN, 14));
@@ -193,6 +306,7 @@ public class WackAMole extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				btnBruh3.setVisible(false);
 				MoleWack();
+				btnBruh3.setVisible(false);
 			}
 		});
 		btnBruh3.setFont(new Font("Ubuntu", Font.PLAIN, 14));
@@ -205,6 +319,7 @@ public class WackAMole extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				btnBruh4.setVisible(false);
 				MoleWack();
+				btnBruh4.setVisible(false);
 			}
 		});
 		btnBruh4.setFont(new Font("Ubuntu", Font.PLAIN, 14));
@@ -217,6 +332,7 @@ public class WackAMole extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				btnBruh5.setVisible(false);
 				MoleWack();
+				btnBruh5.setVisible(false);
 			}
 		});
 		btnBruh5.setFont(new Font("Ubuntu", Font.PLAIN, 14));
@@ -229,6 +345,7 @@ public class WackAMole extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				btnBruh6.setVisible(false);
 				MoleWack();
+				btnBruh6.setVisible(false);
 			}
 		});
 		btnBruh6.setFont(new Font("Ubuntu", Font.PLAIN, 14));
@@ -241,6 +358,7 @@ public class WackAMole extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				btnBruh7.setVisible(false);
 				MoleWack();
+				btnBruh7.setVisible(false);
 			}
 		});
 		btnBruh7.setFont(new Font("Ubuntu", Font.PLAIN, 14));
@@ -253,6 +371,7 @@ public class WackAMole extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				btnBruh8.setVisible(false);
 				MoleWack();
+				btnBruh8.setVisible(false);
 			}
 		});
 		btnBruh8.setFont(new Font("Ubuntu", Font.PLAIN, 14));
@@ -265,6 +384,7 @@ public class WackAMole extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				btnBruh9.setVisible(false);
 				MoleWack();
+				btnBruh9.setVisible(false);
 			}
 		});
 		btnBruh9.setFont(new Font("Ubuntu", Font.PLAIN, 14));
@@ -277,6 +397,7 @@ public class WackAMole extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				btnBruh10.setVisible(false);
 				MoleWack();
+				btnBruh10.setVisible(false);
 			}
 		});
 		btnBruh10.setFont(new Font("Ubuntu", Font.PLAIN, 14));
@@ -289,6 +410,7 @@ public class WackAMole extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				btnBruh11.setVisible(false);
 				MoleWack();
+				btnBruh11.setVisible(false);
 			}
 		});
 		btnBruh11.setFont(new Font("Ubuntu", Font.PLAIN, 14));
@@ -301,6 +423,7 @@ public class WackAMole extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				btnBruh12.setVisible(false);
 				MoleWack();
+				btnBruh12.setVisible(false);
 			}
 		});
 		btnBruh12.setFont(new Font("Ubuntu", Font.PLAIN, 14));
@@ -313,6 +436,7 @@ public class WackAMole extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				btnBruh13.setVisible(false);
 				MoleWack();
+				btnBruh13.setVisible(false);
 			}
 		});
 		btnBruh13.setFont(new Font("Ubuntu", Font.PLAIN, 14));
@@ -325,6 +449,7 @@ public class WackAMole extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				btnBruh14.setVisible(false);
 				MoleWack();
+				btnBruh14.setVisible(false);
 			}
 		});
 		btnBruh14.setFont(new Font("Ubuntu", Font.PLAIN, 14));
@@ -337,6 +462,7 @@ public class WackAMole extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				btnBruh15.setVisible(false);
 				MoleWack();
+				btnBruh15.setVisible(false);
 			}
 		});
 		btnBruh15.setFont(new Font("Ubuntu", Font.PLAIN, 14));
