@@ -154,8 +154,8 @@ public class WackAMole extends JFrame {
 			btnBruh32.setVisible(true);
 		}
 
-		doubleMole = (int)(Math.random() * 2 + 1);
-		if (doubleMole == 2) {
+		doubleMole = (int)(Math.random() * 10 + 1);
+		if (doubleMole == 10) {
 			if (mole2 == 1) {
 				btnBruh1.setVisible(true);
 			}
